@@ -22,6 +22,7 @@
 #define FOURTH_DIGIT 5
 
 int mode; //1-4 mc1-10p0, 5-9 nc0-10p5-0
+byte digit = 0;
 
 SensirionI2cSps30 sensor;
 
@@ -36,6 +37,15 @@ void setup() {
   pinMode(BUTTON_PIN, INPUT);
   pinMode(RED_LIGHT_PIN, OUTPUT);
   digitalWrite(RED_LIGHT_PIN, LOW);
+
+  pinMode(SERIAL_INPUT_PIN, OUTPUT);
+  pinMode(LATCH_PIN, OUTPUT);
+  pinMode(CLOCK_PIN, OUTPUT);
+
+  pinMode(FIRST_DIGIT, OUTPUT);
+  pinMode(SECOND_DIGIT, OUTPUT);
+  pinMode(THIRD_DIGIT, OUTPUT);
+  pinMode(FOURTH_DIGIT, OUTPUT);
 
   sensor.stopMeasurement();
   int8_t serialNumber[32] = {0};
@@ -115,6 +125,15 @@ void loop() {
   display(values[mode]);
 }
 
-void display(int number) {
-  
+void display(int data) {
+  byte digits[4];
+  for (int i = 4; i > 0; i --) {
+    digits[i] = data / (10 ** (i - 1));
+  }
+}
+
+void updateShiftResister() {
+  digitalWrite(LATCH_PIN, LOW);
+  shiftOut(SERIAL_INPUT_PIN, CLOCK_PIN, LSBFIRST, digit);
+  digitalWrite(LATCH_PIN, HIGH)
 }
