@@ -1,4 +1,4 @@
-# Smartch
+# Air Quality Monitor
 A repository about building an air quality monitor with a SPS30 particulate matter sensor and 4-digit 7-segment display.
 
 # Components Used
