@@ -36,10 +36,12 @@ uint16_t values[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 static char errorMessage[64];
 static int16_t error;
 
-const char* ssid = "iPhone";
-const char* password = "012345678";
-String google_script_ID = "AKfycbyw4pTeeHpArzfgDZk8-san1PKvezJoK5gPBRp5UY2Ma01jXIgQMy90XLtZwLh0X07hsA";
+/* uncomment if you want data logging
+const char* ssid = "Enter WiFi name here";
+const char* password = "Enter WiFi password here";
+String google_script_ID = "Enter your Google Apps Script deployment ID here";
 int sheetDelay;
+*/
 
 void setup() {
     Serial.begin(115200);
@@ -137,6 +139,8 @@ void loop() {
             return;
         }
 
+        //uncomment if you want to log value onto Google Sheets
+        //note that the process takes a few seconds
         /*if (WiFi.status() == WL_CONNECTED && millis() - sheetDelay > 5000) {
             sheetDelay = millis();
             Serial.println(millis());
