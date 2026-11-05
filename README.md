@@ -29,7 +29,7 @@ Credit: ATMO https://atmotube.com/blog/particulate-matter-pm-levels-and-aqi
 
 # Housing
 ## Cardboard
-I cut out a case with cardboard to cover the wires and glued four magnets on both the case and SPS30 to make the sensor detachable from the case.
+I cut out a case with cardboard to cover the wires and glued four magnets on each of the case and SPS30 to make the sensor detachable from the case.
 
 <img src="https://github.com/alexew0923/Air_Quality_Monitor/blob/main/Assets/Cardboard_Case.jpeg" width=50% height=50%>
 
