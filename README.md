@@ -31,7 +31,7 @@ Credit: ATMO https://atmotube.com/blog/particulate-matter-pm-levels-and-aqi
 ## Cardboard
 I cut out a case with cardboard to cover the wires and glued four magnets on both the case and SPS30 to make the sensor detachable from the case.
 
-<img src="https://github.com/alexew0923/Air_Quality_Monitor/blob/main/Assets/Cardboard.jpeg" width=50% height=50%>
+<img src="https://github.com/alexew0923/Air_Quality_Monitor/blob/main/Assets/Cardboard_Case.jpeg" width=50% height=50%>
 
 ## Plastic
 If you have a 3D printer, you can 3D print the case for the air quality monitor. The lid snaps into the case body and there are four holes to glue magnets into. Note that because the case thickness is thin, the top part of the case body where there is a chamfer might not 3D print properly. Once the case has been printed, hot glue the four corners of perfboard onto the mounts attach a wood rod on top of the push button, so you can press it from outside the case.
