@@ -4,11 +4,11 @@ A repository about building an air quality monitor with a SPS30 particulate matt
 # Components Used
 - Seeed Studio XIAO ESP32C3
 - SPS30 PM2.5 Sensor
-- 4-digit 7-segment Displa
+- 4-digit 7-segment Display
 - 74HC595 Shift Register
-- - RGB LED
+- RGB LED
 - Push Button
-- - 4 x 330 ohms Resistors for 4-digit 7-segment Display
+- 4 x 330 ohms Resistors for 4-digit 7-segment Display
 - 2 x 220 ohms Resistors for RGB LED
 - 10k Resistor for Pull-Up Resistor in Button
 - Perfboard to Solder Onto
